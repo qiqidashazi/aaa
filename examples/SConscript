@@ -1,0 +1,11 @@
+Import('rtconfig')
+import os
+from building import *
+
+cwd = GetCurrentDir()
+src = Glob('eDriver/*.c')
+CPPPATH = [GetCurrentDir() + '/eDriver']
+
+group = DefineGroup('Master402', src, depend = ['CANFESTIVAL_USING_EDRIVER'], CPPPATH = CPPPATH)
+
+Return('group')

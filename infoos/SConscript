@@ -1,0 +1,12 @@
+Import('rtconfig')
+import os
+from building import *
+
+cwd = GetCurrentDir()
+src = Glob('sca/*.c')
+
+CPPPATH = [GetCurrentDir() + '/sca']
+
+group = DefineGroup('sca', src, depend = ['INFOOS_USING_EXAMPLE'], CPPPATH = CPPPATH)
+
+Return('group')

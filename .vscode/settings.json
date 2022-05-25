@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "master402_canopen.h": "c",
+        "canopen_callback.h": "c",
+        "objdictionary.h": "c",
+        "timers_driver.h": "c",
+        "edriver.h": "c",
+        "stdbool.h": "c"
+    }
+}
